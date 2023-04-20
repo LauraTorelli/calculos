@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade1</title>
+    <link rel="stylesheet" href="atividade1.css">
+</head>
+<body>
+    <script>
+        function ativ1() {
+            //window.alert("quadrado")
+            var var1 = document.getElementById("val1");
+            //window.alert(var1.value * " " * var1.value)
+            document.getElementById("resultado").innerText = var1.value * var1.value * var1.value;
+        }
+    </script>
+    <div>
+    <input id="val1" value="1">
+    <button onclick="ativ1()">Escrever</button>
+    <p id="resultado">XXXX</p>
+</div>
+
+
+<script>
+    function atv2() {
+        //window.alert("conversaõ de fahrenheit para celsius")
+        var f = document.getElementById("valatv2");
+        var menos= 32;
+        var vezes=0.5556
+        //window.alert((var1.value - var2.value)* var3)
+        document.getElementById("resultado2").innerText = (f.value-menos)*vezes;
+    }
+    </script>
+
+    <div id="atividade2">
+        <input id="valatv2" value="1">
+        <button onclick="atv2()"> Escrever</button>
+        <p id="resultado2">xxxx</p>
+    </div>
+
+    <script>
+        function atv3() {
+            //window.alert("area do triangulo")
+            var base = document.getElementById("valatv3");
+            var altura= document.getElementById("valatv3");
+            var dividido=2
+            //window.alert(base*altura)/dividido)
+            document.getElementById("resultado3").innerText = (base.value*altura.value)/dividido;
+        }
+        </script>
+
+        <div id="atividade3">
+            <input id="valatv3" value="base">
+            <input id="valatv3" value="altura">
+            <button onclick="atv3()"> Escrever</button>
+            <p id="resultado3">xxxx</p>
+        </div>
+
+        <script>
+            function atv4() {
+                var raio = document.getElementById("raio").value;
+                var pi = Math.PI;
+            
+                var areacirculo = pi * (raio * raio);
+                var perimetrocirculo = 2 * pi * raio;
+            
+                document.getElementById("resultadoArea").innerText = areacirculo.toFixed(2);
+                document.getElementById("resultadoPerimetro").innerText = perimetrocirculo.toFixed(2);
+            }
+            </script>
+            <div id="atividade4">
+                <input id="raio" value="1">
+                <button onclick="atv4()">Calcular</button><br>
+                <label for="resultadoArea">Área do círculo</label>
+                <p id="resultadoArea">xxxx</p>
+                <label for="resultadoPerimetro">Perímetro do círculo</label>
+                <p id="resultadoPerimetro">xxxx</p>
+            </div>
+
+            <script>
+                function atv5() {
+                    var preco = document.getElementById("preco").value;
+                    var porcentagem= 0.05*100;
+
+                    document.getElementById("resultado5").innerText =porcentagem;
+                }
+                </script>
+
+                <div id="atividade5">
+            <input id="preco" value="1">
+            <button onclick="atv5()"> Escrever</button>
+            <p id="resultado5">xxxx</p>
+            </div>
+
+            <script>
+                function atv6() {
+                    var ano= document.getElementById("ano").value;
+                    var verificação= ano>2005;
+                    var verificação= ano<2005;
+                    document.getElementById("resultado6").innerText = verificação;
+                }
+</script>
+                <div id="atividade6">
+            <input id="ano" value="1">
+            <button onclick="atv6()"> Escrever</button>
+            <p id="resultado6">xxxx</p>
+            </div>
+
+            <script>
+                function atv7() {
+                    var dinheiro= document.getElementById("dinheiro").value;
+                    var litros= dinheiro/5;
+                    var km= litros*20;
+                    
+                    document.getElementById("resultadolitro").innerText = litros.toFixed(2);
+                    document.getElementById("resultadokm").innerText = km.toFixed(2);
+                }
+            </script>
+
+            <div id="atividade7">
+                <input id="dinheiro" value="1">
+                <button onclick="atv7()">Calcular</button><br>
+                <label for="resultadolitro">Quantos litros?</label>
+                <p id="resultadolitro">xxxx</p>
+                <label for="resultadokm">Quantos km?</label>
+                <p id="resultadokm">xxxx</p>
+            </div>
+
+
+
+
+</body>
+</html>
